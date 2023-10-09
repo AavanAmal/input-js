@@ -1,0 +1,58 @@
+body {
+	background-color:orange;
+	background-attachment: fixed;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+#form {
+	width:80%;
+	margin: 20vh auto 0 auto;
+	background-color: whitesmoke;
+	border-radius: 5px;
+	padding: 30px;
+}
+
+h1 {
+	text-align: center;
+	color:orange;
+}
+
+#form button {
+	background-color:orange;
+	color: white;
+	border: 1px solid orange;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 20px 0px;
+	cursor: pointer;
+	font-size: 20px;
+    width: 100%;
+}
+
+.row input {
+	border-radius: 5px;
+	font-size: 20px;
+	margin-top: 5px;
+	padding: 10px;
+	border: 1px solid;
+    width: 100%;
+}
+
+.row input:focus {
+	outline: 0;
+}
+
+.row .error {
+	color: red;
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+.row .success input {
+	border-color: rgb(22, 152, 22);
+}
+
+.row .error input {
+	border-color: red;
+}
