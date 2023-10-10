@@ -27,21 +27,21 @@ function validateInputs(){
 }
 
 function setError(element,message){
-    const inputGroup = element.parentElement;
-    const errorElement = inputGroup.querySelector('.error')
+    const row = element.parentElement;
+    const errorElement = row.querySelector('.error')
 
     errorElement.innerText = message;
-    inputGroup.classList.add('error')
-    inputGroup.classList.remove('success')
+    row.classList.add('error')
+    row.classList.remove('success')
 }
 
 function setSuccess(element){
-    const inputGroup = element.parentElement;
-    const errorElement = inputGroup.querySelector('.error')
+    const row = element.parentElement;
+    const errorElement = row.querySelector('.error')
 
     errorElement.innerText = '';
-    inputGroup.classList.add('success')
-    inputGroup.classList.remove('error')
+    row.classList.add('success')
+    row.classList.remove('error')
 }
 
 const validateEmail = (email) => {
