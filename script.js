@@ -21,7 +21,8 @@ function validateInputs(){
         setError(email,'Please Enter a Valid email')
     }
     else{
-        setSuccess(email)
+        setSuccess(email,'Success')
+
     }
 
 }
@@ -31,15 +32,17 @@ function setError(element,message){
     const errorElement = row.querySelector('.error')
 
     errorElement.innerText = message;
+    errorElement.style.color='red';
     row.classList.add('error')
     row.classList.remove('success')
 }
 
-function setSuccess(element){
+function setSuccess(element,message){
     const row = element.parentElement;
     const errorElement = row.querySelector('.error')
 
-    errorElement.innerText = '';
+    errorElement.innerText =message;
+    errorElement.style.color='green';
     row.classList.add('success')
     row.classList.remove('error')
 }

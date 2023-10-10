@@ -44,14 +44,21 @@ h1 {
 }
 
 .row .error {
-	color: red;
+	/* color: red; */
 	font-size: 16px;
 	margin-top: 5px;
 }
 
+/* .row .success {
+	color: rgb(22, 152, 22);
+	font-size: 16px;
+	margin-top: 5px;
+} */
+
 .row .success input {
 	border-color: rgb(22, 152, 22);
 }
+
 
 .row .error input {
 	border-color: red;
